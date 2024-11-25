@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: gray;
+}
+
+header {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+h1 {
+  background-color: dodgerblue;
+  padding: 1rem;
+  padding-bottom: 0;
+  border-radius: 8px;
+}
+.container {
+  background-color: dodgerblue;
+  border-radius: 8px;
+}
+
+.input-field {
+  background-color: antiquewhite;
+  display: block;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.buttons {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  background-color: dodgerblue;
+}
+
+.add-btn {
+  background-color: red;
+  color: whitesmoke;
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+.clear-list {
+  background-color: red;
+  color: whitesmoke;
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+.list-container {
+  background-color: mediumslateblue;
+  width: 40%;
+  height: 40%;
+}

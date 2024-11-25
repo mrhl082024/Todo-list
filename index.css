@@ -57,3 +57,9 @@ h1 {
   width: 40%;
   height: 40%;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}

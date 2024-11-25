@@ -15,7 +15,14 @@ function addTask() {
     li.appendChild(span);
   }
   inputField.value = "";
-  savedata();
 }
 
-addButton.addEventListener("click", function (addTask) {});
+inputField.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    addTask();
+  }
+});
+
+function clearTasks() {
+  document.querySelector(".list-container").innerHTML = "";
+}

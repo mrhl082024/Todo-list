@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
     <title>ToDo-List</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1>ToDo-List</h1>
         <input class="input-field" type="text" placeholder="What to do?" />
         <div class="buttons">
-          <button class="add-btn">Add</button>
+          <button onclick="addTask()" class="add-btn">Add</button>
           <button class="clear-list">Clear List</button>
         </div>
       </div>

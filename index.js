@@ -17,3 +17,5 @@ function addTask() {
   inputField.value = "";
   savedata();
 }
+
+addButton.addEventListener("click", function (addTask) {});

@@ -8,21 +8,29 @@ function addTask() {
     alert("You must write something!");
   } else {
     let li = document.createElement("li");
-    li.innerHTML = inputField.value;
+    li.textContent = inputField.value;
     listContainer.appendChild(li);
+    let checked = document.createElement("input");
+    checked.type = "checkbox";
+    li.appendChild(checked);
     let span = document.createElement("span");
-    span.innerHTML = "";
+    span.textContent = "\u00d7";
     li.appendChild(span);
   }
   inputField.value = "";
 }
 
-inputField.addEventListener("keypress", function (e) {
+listContainer.addEventListener("click", (e) => {
+  e.target.tagName === "span";
+  e.target.parentElement.remove();
+});
+
+inputField.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     addTask();
   }
 });
 
 function clearTasks() {
-  document.querySelector(".list-container").innerHTML = "";
+  document.querySelector(".list-container").textContent = "";
 }

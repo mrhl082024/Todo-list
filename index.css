@@ -7,9 +7,9 @@
 .container {
   width: 100%;
   height: 100svh;
-  background: rgb(2, 0, 36);
-  padding: 10rem 20rem 0 20rem;
+  padding: 8rem 30% 0 30%;
 
+  background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -25,12 +25,61 @@
   border-radius: 10rem;
 }
 
+h1 {
+  padding: 1rem 0 1rem 0;
+}
+
 .input-field {
   width: 30svw;
   height: 2rem;
   border-radius: 1rem;
   border: none;
+  text-align: center;
 }
 
-h1 {
+.buttons {
+  padding: 1rem 0 1rem 0;
+}
+
+button {
+  height: 2rem;
+  width: 8rem;
+  border: none;
+  background-color: #ff6843;
+  border-radius: 1rem;
+}
+
+ul {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+  margin-right: 1rem;
+}
+
+li::marker {
+  content: "";
+}
+
+span {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+li {
+  width: 100%;
+}
+
+ul li span {
+  padding: 0 6.5px 1px 6.5px;
+  font-size: 24px;
+  border-radius: 1rem;
+}
+
+ul li span:hover {
+  background: rgba(128, 128, 128, 0.526);
 }

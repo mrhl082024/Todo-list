@@ -20,11 +20,6 @@ function addTask() {
   inputField.value = "";
 }
 
-listContainer.addEventListener("click", (e) => {
-  e.target.tagName === "span";
-  e.target.parentElement.remove();
-});
-
 inputField.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     addTask();

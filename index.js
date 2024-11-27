@@ -9,16 +9,17 @@ function addTask() {
     alert("You must write something!");
   } else {
     let li = document.createElement("li");
-    li.textContent = inputField.value;
     listContainer.appendChild(li);
     li.id = i;
+    let p = document.createElement("p");
+    p.textContent = inputField.value;
+    li.appendChild(p);
+    p.id = `p-${i}`;
     let button = document.createElement("button");
     button.textContent = "\u00d7";
+    button.id = `button-${i}`;
+    button.classList.add("remove-button");
     li.appendChild(button);
-    let p = document.createElement("p");
-    p.textContent = "\u00d7";
-    li.appendChild(p);
-    p.id = i;
     i++;
   }
   inputField.value = "";

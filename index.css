@@ -66,12 +66,14 @@ li::marker {
 }
 
 span {
-  min-width: 44px;
-  min-height: 44px;
+  /* min-width: 44px;
+  min-height: 44px; */
 }
 
 li {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul li span {

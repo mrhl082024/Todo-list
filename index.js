@@ -12,10 +12,13 @@ function addTask() {
     li.textContent = inputField.value;
     listContainer.appendChild(li);
     li.id = i;
-    let span = document.createElement("span");
-    span.textContent = "\u00d7";
-    li.appendChild(span);
-    span.id = i;
+    let button = document.createElement("button");
+    button.textContent = "\u00d7";
+    li.appendChild(button);
+    let p = document.createElement("p");
+    p.textContent = "\u00d7";
+    li.appendChild(p);
+    p.id = i;
     i++;
   }
   inputField.value = "";
@@ -32,7 +35,7 @@ function clearTasks() {
 }
 
 listContainer.addEventListener("click", (e) => {
-  if (e.target.tagName === "SPAN") {
+  if (e.target.tagName === "BUTTON") {
     e.target.parentElement.remove();
   }
 });
